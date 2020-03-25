@@ -1,0 +1,71 @@
+/*** Mixins  ***/
+/*** Default Styles ***/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow: hidden;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+body {
+  font-family: 'circular std', sans-serif; }
+
+/*** Color Variables ***/
+#header {
+  height: 100vh;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-size: cover; }
+  #header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative; }
+    #header .container .logo {
+      margin-top: 30px;
+      width: 100px; }
+    #header .container .header__text {
+      max-width: 350px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+      #header .container .header__text h1 {
+        font-size: 34px;
+        font-weight: 600; }
+      #header .container .header__text .square {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background-color: #353A85;
+        margin: 15px 0; }
+      #header .container .header__text p {
+        font-size: 15px;
+        line-height: 20px;
+        color: #777; }
+      #header .container .header__text .header__btn {
+        display: inline-block;
+        padding: 18px 40px;
+        background: transparent;
+        border: 2px solid #353A85;
+        font-weight: bold;
+        margin-top: 20px;
+        -webkit-transition: all 480ms;
+        -o-transition: all 480ms;
+        transition: all 480ms; }
+        #header .container .header__text .header__btn:hover {
+          background-color: #353A85;
+          color: #fff; }
+      #header .container .header__text .line span .icon {
+        font-size: 30px;
+        color: #353A85;
+        cursor: pointer; }

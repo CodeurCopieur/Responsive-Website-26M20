@@ -1,0 +1,99 @@
+/*** Mixins  ***/
+
+
+/*** Default Styles ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	overflow-x: hidden;
+  overflow-y: scroll;
+  overflow: hidden;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: 'circular std', sans-serif;
+}
+
+/*** Color Variables ***/
+$violet: #353A85;
+$blanc: #fff;
+$grey: #777;
+
+#header {
+
+  height: 100vh;
+  background-image: url('../images/background.png');
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+
+    .logo {
+      margin-top: 30px;
+      width: 100px;
+    }
+
+    .header__text {
+      max-width: 350px;
+      //margin-top: 140px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+
+      h1 {
+        font-size: 34px;
+        font-weight: 600;
+      }
+
+      .square {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background-color: $violet;
+        margin:15px 0;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        color: $grey;
+      }
+
+      .header__btn {
+        display: inline-block;
+        padding: 18px 40px;
+        background: transparent;
+        border: 2px solid $violet;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: all 480ms;
+
+        &:hover {
+          background-color: $violet;
+          color: $blanc;
+        }
+      }
+
+      .line {
+        span {
+          .icon {
+            font-size: 30px;
+            color: $violet;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

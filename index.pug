@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    //SEO
+    meta(name='keywords' content='portfolio, intégrateur, louis')
+    meta(name='author' content='Widdy Louis')
+    meta(name='copyright' content='© Copyright 2020 - Widdy Louis')
+
+    //CSS
+    link(rel="stylesheet", href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css")
+    link(rel="stylesheet", href="assets/css/normalize.css")
+    link(rel="stylesheet", href="assets/css/reset.css")
+    link(rel="stylesheet", href="assets/css/index.css")
+    title Responsive Website
+  body
+    header#header
+      .container
+        img(src="assets/images/logo.png", alt="").logo
+        .header__text
+          h1 The surpose is to <br> teach, bring learning to people
+          span.square
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
+          a.header__btn(href="#") Lire plus
+          .line
+            each val, i in {1:'ion-logo-linkedin', 2:'ion-logo-codepen', 3:'ion-logo-instagram'}
+              span(class=".line-"+i) 
+                i.icon(class=val)
