@@ -15,15 +15,40 @@
     <title>Responsive Website</title>
   </head>
   <body>
+    <!--header -->
     <header id="header">
-      <div class="container"><img class="logo" src="assets/images/logo.png" alt=""/>
+      <div class="container">
+        <div class="hdr__nav"><img class="logo" src="assets/images/logo.png" alt=""/>
+          <div class="nav__burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
         <div class="header__text">
           <h1>The surpose is to <br> teach, bring learning to people</h1><span class="square"></span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.</p><a class="header__btn" href="#">Lire plus</a>
-          <div class="line"><span class=".line-1"> <i class="icon ion-logo-linkedin"></i></span><span class=".line-2"> <i class="icon ion-logo-codepen"></i></span><span class=".line-3"> <i class="icon ion-logo-instagram"></i></span>
+          <div class="line"><span class="line-1"> <a href=""> <i class="icon ion-logo-linkedin"></i></a></span><span class="line-2"> <a href=""> <i class="icon ion-logo-codepen"></i></a></span><span class="line-3"> <a href=""> <i class="icon ion-logo-instagram"></i></a></span>
           </div>
         </div>
       </div>
     </header>
+    <!--sideNav -->
+    <nav id="sideNav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link">home</a></li>
+        <li class="nav__item"><a class="nav__link">about us</a></li>
+        <li class="nav__item"><a class="nav__link">features</a></li>
+        <li class="nav__item"><a class="nav__link">courses</a></li>
+        <li class="nav__item"><a class="nav__link">offer</a></li>
+        <li class="nav__item"><a class="nav__link">contact</a></li>
+      </ul>
+    </nav>
+    <!--about -->
+    <section id="about">
+      <div class="about__leftCol"><img src="assets/images/about.png" alt=""/></div>
+      <div class="about__rigthCol"></div>
+    </section>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
