@@ -1,14 +1,43 @@
-/*** Mixins  ***/
+/*** Color Variables ***/
+$violet: #353A85;
+$blanc: #fff;
+$grey: #777;
+$rose: #D67086;
+$violet-2: #5D66D3;
+$violet-3: #292949;
+$violet-4: #8CABEF;
+$beige: #EFBFA5;
+$black: #292949;
 
+
+/*** Mixins  ***/
+@mixin Hline($width, $height, $mT, $bgC) {
+  width: $width;
+  height: $height;
+  margin-top: $mT;
+  background-color: $bgC;
+}
+
+/*** Extends ***/
+%sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: $violet-2;
+  z-index: 2;
+  transition: all 480ms;
+}
 
 /*** Default Styles ***/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	overflow-x: hidden;
-  overflow-y: scroll;
-  overflow: hidden;
+	//overflow-x: hidden;
+  //overflow-y: scroll;
+  //overflow: hidden;
   list-style: none;
 }
 a {
@@ -19,11 +48,6 @@ a {
 body {
   font-family: 'circular std', sans-serif;
 }
-
-/*** Color Variables ***/
-$violet: #353A85;
-$blanc: #fff;
-$grey: #777;
 
 #header {
 
@@ -38,18 +62,69 @@ $grey: #777;
     height: 100%;
     position: relative;
 
-    .logo {
-      margin-top: 30px;
-      width: 100px;
+    .hdr__nav {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .logo {
+        margin-top: 30px;
+        width: 100px;
+      }
+
+      .nav__burger {
+        width: 2.5rem;
+        height: 1.2rem;
+        position: relative;
+        cursor: pointer;
+        z-index: 3;
+
+        .line {
+          width: 100%;
+          height: 3px;
+          border-radius: 10px;
+          background-color: $rose;
+          position: absolute;
+          display: block;
+          right: 0;
+          transition: all 480ms;
+
+
+          &:nth-child(1){
+            top: 0;
+          }
+
+          &:nth-child(2) {
+            top: 50%;
+            margin-top: -1px;
+            width: 2rem;
+          }
+
+          &:nth-child(3) {
+            top: 100%;
+            margin-top: -2px;
+            width: 1.5rem;
+          }
+
+        }
+
+        
+        &:hover .line {
+          width: 100%;
+        }
+      }
     }
 
     .header__text {
       max-width: 350px;
-      //margin-top: 140px;
-      position: absolute;
+      margin-top: 140px;
+      /*position: absolute;
       top: 50%;
       left: 0;
-      transform: translate(0, -50%);
+      transform: translate(0, -50%);*/
 
       h1 {
         font-size: 34px;
@@ -86,14 +161,57 @@ $grey: #777;
       }
 
       .line {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
         span {
-          .icon {
-            font-size: 30px;
-            color: $violet;
-            cursor: pointer;
+        
+          a {
+            display: inline-block;
+            .icon {
+              font-size: 30px;
+              color: $blanc;
+              cursor: pointer;
+            }
           }
+        }
+
+        .line-1 {
+          @include Hline(15px, 15px, null, $violet)
+        }
+
+        .line-2 {
+          @include Hline(80px, 1px, 10px, $violet)
+        }
+
+        .line-3 {
+          @include Hline(60px, 1px, 10px, $violet)
         }
       }
     }
+  }
+}
+
+#sideNav {
+  @extend %sideNav;
+  display: flex;
+  align-items: center;
+
+  .nav__list {
+
+    .nav__item {
+
+      margin: 50px 20px;
+      .nav__link {
+        text-transform: uppercase;
+        color: $blanc;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.is-active {
+    right: 0;
+    z-index: 1;
   }
 }
