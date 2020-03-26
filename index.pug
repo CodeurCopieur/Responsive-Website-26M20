@@ -33,10 +33,10 @@ html(lang="fr")
             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
           a.header__btn(href="#") Lire plus
           .line
-            each val, i in {1:'ion-logo-linkedin', 2:'ion-logo-codepen', 3:'ion-logo-instagram'}
-              span(class="line-"+i) 
+            each val, i in [1 , 2, 3]
+              span(class="line-"+val) 
                 a(href="") 
-                  i.icon(class=val)
+                  
     
     //sideNav 
     nav#sideNav
@@ -49,10 +49,58 @@ html(lang="fr")
     //about 
     section#about
       .about__leftCol
-        img(src="assets/images/about.png", alt="")
+        img(src="assets/images/about.png", alt="").image__leftCol
 
       .about__rigthCol
+        .about__text
+          h1 about us
+          span.square
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam porro esse eius repellat consequatur cumque voluptatem. Exercitationem tempora, ad, commodi sed aut eligendi voluptatibus error reiciendis consectetur deleniti repellat odit, voluptas minima magni vel aliquam unde quidem eum vitae.
+          .line
+            each val, i in [1 , 2, 3]
+              span(class="line-"+val) 
+                a(href="")
+
+          h2 " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, quaerat. Nemo porro reiciendis iure similique placeat eveniet molestiae natus sunt? "
+          h3 Codwerk
     
+    //features
+    section#features
+      .feature__row
+        each val, index in [{image: 'assets/images/pic-1.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-2.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-3.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}]
+          .feature__Col
+            img(src= val.image, alt= val.titre)
+            h4= val.titre
+            p= val.content
+      .features__btn 
+        .line
+            each val, i in [1 , 2, 3]
+              span(class="line-"+val) 
+                a(href="") 
+                  i.icon(class=val)
+        a.header__btn(href="#") Essaie Gratuit
+    
+    //courses
+    section#courses
+      .container.course-row
+        .courses__leftCol
+          .courses__txt
+            h1 The surpose is to <br> teach, bring learning to people
+            span.square
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
+              
+            a.header__btn(href="#") Lire plus
+
+            .line
+              each val, i in [1 , 2, 3]
+                span(class="line-"+val) 
+                  a(href="")
+
+            
+
+        .courses__rightCol
+          img(src="assets/images/course.png", alt="")
 
     script(src="assets/js/index.js")
       
