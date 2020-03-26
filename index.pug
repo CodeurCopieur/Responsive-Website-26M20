@@ -51,7 +51,7 @@ html(lang="fr")
       .about__leftCol
         img(src="assets/images/about.png", alt="").image__leftCol
 
-      .about__rigthCol
+      .about__rightCol
         .about__text
           h1 about us
           span.square
@@ -89,18 +89,34 @@ html(lang="fr")
             span.square
             p
               | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
-              
-            a.header__btn(href="#") Lire plus
+
+            a.header__btn(href="#") Tout les cours
 
             .line
               each val, i in [1 , 2, 3]
                 span(class="line-"+val) 
                   a(href="")
 
-            
-
         .courses__rightCol
           img(src="assets/images/course.png", alt="")
+    
+    //offer
+    section#offer
+      .offer__leftCol
+        img(src="assets/images/offer.png", alt="").image__leftCol
+
+      .offer__rightCol
+        .offer_text
+          h1 Limitless learning, <br> limitless possibilities 
+          span.square
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam porro esse eius repellat consequatur cumque voluptatem. Exercitationem tempora, ad, commodi sed aut eligendi voluptatibus error reiciendis consectetur deleniti repellat odit, voluptas minima magni vel aliquam unde quidem eum vitae.
+
+          a.header__btn(href="#") Essaie Gratuit
+
+          .line
+            each val, i in [1 , 2, 3]
+              span(class="line-"+val) 
+                a(href="")
 
     script(src="assets/js/index.js")
       
