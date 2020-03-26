@@ -1,0 +1,57 @@
+%sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: $violet-2;
+  z-index: 2;
+  transition: all 480ms;
+}
+
+%btnv1 {
+  display: inline-block;
+  padding: 18px 40px;
+  background: transparent;
+  border: 2px solid $violet;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 480ms;
+  color: $violet;
+
+  &:hover {
+    background-color: $violet;
+    color: $blanc;
+  }
+}
+
+%lineDetails {
+  @include line;
+
+  .line-1 {
+    @include Hline(15px, 15px, null, $violet)
+  }
+
+  .line-2 {
+    @include Hline(80px, 1px, 10px, $violet)
+  }
+
+  .line-3 {
+    @include Hline(60px, 1px, 10px, $violet)
+  }
+}
+
+
+%blockDetails {
+  h1 {
+    @include h1;
+  }
+
+  .square {
+    @include square;
+  }
+
+  p {
+    @include paragrapheStyle;
+  }
+}

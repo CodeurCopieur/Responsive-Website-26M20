@@ -1,0 +1,63 @@
+/*** Mixins  ***/
+@mixin Hline($width, $height, $mT, $bgC) {
+  width: $width;
+  height: $height;
+  margin-top: $mT;
+  background-color: $bgC;
+}
+
+@mixin w50($width){
+  flex-basis: 50%;
+}
+
+@mixin w25($width){
+  flex-basis: 25%;
+}
+
+
+@mixin square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: $violet;
+    margin:15px 0;
+}
+
+@mixin line {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+@mixin h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+@mixin paragrapheStyle {
+  color: $grey;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin titre($size, $style, $margin, $color) {
+  font-size: $size;
+  font-style: $style;
+  margin: $margin;
+  color: $color;
+}
+
+@mixin row($width, $margin, $flex, $center,$txtcenter, $space-around, $wrap){
+  width: $width;
+  margin: $margin;
+  display: $flex;
+  align-items: $center;
+  text-align: $txtcenter;
+  justify-content: $space-around;
+  flex-wrap: $wrap;
+}
+
+@mixin centrer($width, $margin) {
+  width: $width;
+  margin: $margin;
+}

@@ -2,6 +2,7 @@
 $violet: #353A85;
 $blanc: #fff;
 $grey: #777;
+$grey-2: #797979;
 $rose: #D67086;
 $violet-2: #5D66D3;
 $violet-3: #292949;
@@ -9,26 +10,8 @@ $violet-4: #8CABEF;
 $beige: #EFBFA5;
 $black: #292949;
 
-
-/*** Mixins  ***/
-@mixin Hline($width, $height, $mT, $bgC) {
-  width: $width;
-  height: $height;
-  margin-top: $mT;
-  background-color: $bgC;
-}
-
-/*** Extends ***/
-%sideNav {
-  width: 250px;
-  height: 100vh;
-  position: fixed;
-  right: -250px;
-  top: 0;
-  background-color: $violet-2;
-  z-index: 2;
-  transition: all 480ms;
-}
+@import 'mixins.scss';
+@import 'extend.scss';
 
 /*** Default Styles ***/
 * {
@@ -49,16 +32,17 @@ body {
   font-family: 'circular std', sans-serif;
 }
 
-#header {
 
+
+/* header */
+#header {
   height: 100vh;
   background-image: url('../images/background.png');
   background-position: center;
   background-size: cover;
 
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @include centrer(1200px, 0 auto);
     height: 100%;
     position: relative;
 
@@ -76,11 +60,13 @@ body {
       }
 
       .nav__burger {
-        width: 2.5rem;
+        width: 2.25rem;
         height: 1.2rem;
-        position: relative;
+        position: fixed;
+        right: 155px;
         cursor: pointer;
         z-index: 3;
+        transition: all 480ms;
 
         .line {
           width: 100%;
@@ -100,20 +86,28 @@ body {
           &:nth-child(2) {
             top: 50%;
             margin-top: -1px;
-            width: 2rem;
+            width: 1.5rem;
           }
 
           &:nth-child(3) {
             top: 100%;
             margin-top: -2px;
-            width: 1.5rem;
+            width: 1rem;
           }
 
         }
 
         
-        &:hover .line {
-          width: 100%;
+        &.active {
+          .line:nth-child(1) {
+            width: 1rem;
+          }
+          .line:nth-child(2) {
+            
+          }
+            .line:nth-child(3) {
+            width: 100%;
+          }
         }
       }
     }
@@ -126,72 +120,29 @@ body {
       left: 0;
       transform: translate(0, -50%);*/
 
-      h1 {
-        font-size: 34px;
-        font-weight: 600;
-      }
-
-      .square {
-        height: 12px;
-        width: 12px;
-        display: inline-block;
-        background-color: $violet;
-        margin:15px 0;
-      }
-
-      p {
-        font-size: 15px;
-        line-height: 20px;
-        color: $grey;
-      }
+      @extend %blockDetails;
 
       .header__btn {
-        display: inline-block;
-        padding: 18px 40px;
-        background: transparent;
-        border: 2px solid $violet;
-        font-weight: bold;
-        margin-top: 20px;
-        transition: all 480ms;
-
-        &:hover {
-          background-color: $violet;
-          color: $blanc;
-        }
+        @extend %btnv1;
       }
 
       .line {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+        @extend %lineDetails;
         span {
         
           a {
             display: inline-block;
-            .icon {
-              font-size: 30px;
-              color: $blanc;
-              cursor: pointer;
-            }
           }
-        }
-
-        .line-1 {
-          @include Hline(15px, 15px, null, $violet)
-        }
-
-        .line-2 {
-          @include Hline(80px, 1px, 10px, $violet)
-        }
-
-        .line-3 {
-          @include Hline(60px, 1px, 10px, $violet)
         }
       }
     }
   }
 }
 
+/*** Extends ***/
+
+
+/* sideNav */
 #sideNav {
   @extend %sideNav;
   display: flex;
@@ -213,5 +164,135 @@ body {
   &.is-active {
     right: 0;
     z-index: 1;
+  }
+}
+
+/* about */
+#about {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .about__leftCol {
+     @include w50(50%);
+     .image__leftCol {
+       width: 100%;
+     }
+  }
+
+  .about__rigthCol {
+    @include w50(50%);
+    text-align: right;
+    .about__text {
+      max-width: 500px;
+      margin-right: 0;
+      h1 {
+        @include h1;
+        text-transform: capitalize;
+      }
+      .square {
+        @include square;
+      }
+      
+      p {
+        @include paragrapheStyle;
+      }
+
+      .line {
+        align-items: flex-end;
+        @extend %lineDetails;
+      }
+
+      h2 {
+        @include titre(28px, italic, 50px 0 10px, null);
+      }
+
+      h3 {
+        @include titre(20px, italic, null, $grey-2);
+      }
+    }
+  }
+}
+
+/* features */
+#features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  .feature__row {
+
+    @include row(80%, auto, flex, center, center, space-around, wrap);
+    .feature__Col {
+      @include w25(25%);
+
+      img {
+        width: 100px;
+      }
+
+      h4 {
+        @include titre(20px, null, null, null);
+        margin: 15px 0;
+        font-weight: 600;
+      }
+
+      p {
+        @include paragrapheStyle;
+      }
+    }
+
+  }
+  
+  .features__btn {
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .line {
+      align-items: flex-end;
+      @extend %lineDetails;
+      margin-right: 25px;
+    }
+    .header__btn {
+      @extend %btnv1;
+    }
+  }
+
+}
+
+/* courses */
+#courses {
+  padding: 100px 0;
+
+  .course-row {
+    @include centrer(1200px, 0 auto);
+    @include row(null, null, flex, center, null, null, wrap);
+
+    .courses__leftCol, .courses__rightCol {
+      @include w50(50%);
+    }
+
+    .courses__leftCol {
+
+      .courses__txt {
+        max-width: 350px;
+        @extend %blockDetails;
+        .line {
+          @extend %lineDetails;
+        }
+        .header__btn {
+          @extend %btnv1;
+        }
+      }
+
+    }
+
+    .courses__rightCol {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
