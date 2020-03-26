@@ -12,7 +12,7 @@
   -o-transition: all 480ms;
   transition: all 480ms; }
 
-#header .container .header__text .header__btn, #features .features__btn .header__btn, #courses .course-row .courses__leftCol .courses__txt .header__btn {
+#header .container .header__text .header__btn, #features .features__btn .header__btn, #courses .course-row .courses__leftCol .courses__txt .header__btn, #offer .header__btn {
   display: inline-block;
   padding: 18px 40px;
   background: transparent;
@@ -23,11 +23,11 @@
   -o-transition: all 480ms;
   transition: all 480ms;
   color: #353A85; }
-  #header .container .header__text .header__btn:hover, #features .features__btn .header__btn:hover, #courses .course-row .courses__leftCol .courses__txt .header__btn:hover {
+  #header .container .header__text .header__btn:hover, #features .features__btn .header__btn:hover, #courses .course-row .courses__leftCol .courses__txt .header__btn:hover, #offer .header__btn:hover {
     background-color: #353A85;
     color: #fff; }
 
-#header .container .header__text .line, #about .about__rigthCol .about__text .line, #features .features__btn .line, #courses .course-row .courses__leftCol .courses__txt .line {
+#header .container .header__text .line, #about .about__rightCol .about__text .line, #about .about__rightCol .offer_text .line, #about .offer__rightCol .about__text .line, #about .offer__rightCol .offer_text .line, #offer .about__rightCol .about__text .line, #offer .about__rightCol .offer_text .line, #offer .offer__rightCol .about__text .line, #offer .offer__rightCol .offer_text .line, #features .features__btn .line, #courses .course-row .courses__leftCol .courses__txt .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,16 +36,16 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 20px; }
-  #header .container .header__text .line .line-1, #about .about__rigthCol .about__text .line .line-1, #features .features__btn .line .line-1, #courses .course-row .courses__leftCol .courses__txt .line .line-1 {
+  #header .container .header__text .line .line-1, #about .about__rightCol .about__text .line .line-1, #about .about__rightCol .offer_text .line .line-1, #about .offer__rightCol .about__text .line .line-1, #about .offer__rightCol .offer_text .line .line-1, #offer .about__rightCol .about__text .line .line-1, #offer .about__rightCol .offer_text .line .line-1, #offer .offer__rightCol .about__text .line .line-1, #offer .offer__rightCol .offer_text .line .line-1, #features .features__btn .line .line-1, #courses .course-row .courses__leftCol .courses__txt .line .line-1 {
     width: 15px;
     height: 15px;
     background-color: #353A85; }
-  #header .container .header__text .line .line-2, #about .about__rigthCol .about__text .line .line-2, #features .features__btn .line .line-2, #courses .course-row .courses__leftCol .courses__txt .line .line-2 {
+  #header .container .header__text .line .line-2, #about .about__rightCol .about__text .line .line-2, #about .about__rightCol .offer_text .line .line-2, #about .offer__rightCol .about__text .line .line-2, #about .offer__rightCol .offer_text .line .line-2, #offer .about__rightCol .about__text .line .line-2, #offer .about__rightCol .offer_text .line .line-2, #offer .offer__rightCol .about__text .line .line-2, #offer .offer__rightCol .offer_text .line .line-2, #features .features__btn .line .line-2, #courses .course-row .courses__leftCol .courses__txt .line .line-2 {
     width: 80px;
     height: 1px;
     margin-top: 10px;
     background-color: #353A85; }
-  #header .container .header__text .line .line-3, #about .about__rigthCol .about__text .line .line-3, #features .features__btn .line .line-3, #courses .course-row .courses__leftCol .courses__txt .line .line-3 {
+  #header .container .header__text .line .line-3, #about .about__rightCol .about__text .line .line-3, #about .about__rightCol .offer_text .line .line-3, #about .offer__rightCol .about__text .line .line-3, #about .offer__rightCol .offer_text .line .line-3, #offer .about__rightCol .about__text .line .line-3, #offer .about__rightCol .offer_text .line .line-3, #offer .offer__rightCol .about__text .line .line-3, #offer .offer__rightCol .offer_text .line .line-3, #features .features__btn .line .line-3, #courses .course-row .courses__leftCol .courses__txt .line .line-3 {
     width: 60px;
     height: 1px;
     margin-top: 10px;
@@ -176,7 +176,7 @@ body {
     z-index: 1; }
 
 /* about */
-#about {
+#about, #offer {
   padding: 100px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,41 +186,42 @@ body {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  #about .about__leftCol {
+  #about .about__leftCol, #about .offer__leftCol, #offer .about__leftCol, #offer .offer__leftCol {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
-    #about .about__leftCol .image__leftCol {
+    #about .about__leftCol .image__leftCol, #about .offer__leftCol .image__leftCol, #offer .about__leftCol .image__leftCol, #offer .offer__leftCol .image__leftCol {
       width: 100%; }
-  #about .about__rigthCol {
+  #about .about__rightCol, #about .offer__rightCol, #offer .about__rightCol, #offer .offer__rightCol {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     text-align: right; }
-    #about .about__rigthCol .about__text {
+    #about .about__rightCol .about__text, #about .about__rightCol .offer_text, #about .offer__rightCol .about__text, #about .offer__rightCol .offer_text, #offer .about__rightCol .about__text, #offer .about__rightCol .offer_text, #offer .offer__rightCol .about__text, #offer .offer__rightCol .offer_text {
       max-width: 500px;
-      margin-right: 0; }
-      #about .about__rigthCol .about__text h1 {
+      margin-right: 100px;
+      display: inline-block; }
+      #about .about__rightCol .about__text h1, #about .about__rightCol .offer_text h1, #about .offer__rightCol .about__text h1, #about .offer__rightCol .offer_text h1, #offer .about__rightCol .about__text h1, #offer .about__rightCol .offer_text h1, #offer .offer__rightCol .about__text h1, #offer .offer__rightCol .offer_text h1 {
         font-size: 34px;
         font-weight: 600;
         text-transform: capitalize; }
-      #about .about__rigthCol .about__text .square {
+      #about .about__rightCol .about__text .square, #about .about__rightCol .offer_text .square, #about .offer__rightCol .about__text .square, #about .offer__rightCol .offer_text .square, #offer .about__rightCol .about__text .square, #offer .about__rightCol .offer_text .square, #offer .offer__rightCol .about__text .square, #offer .offer__rightCol .offer_text .square {
         height: 12px;
         width: 12px;
         display: inline-block;
         background-color: #353A85;
         margin: 15px 0; }
-      #about .about__rigthCol .about__text p {
+      #about .about__rightCol .about__text p, #about .about__rightCol .offer_text p, #about .offer__rightCol .about__text p, #about .offer__rightCol .offer_text p, #offer .about__rightCol .about__text p, #offer .about__rightCol .offer_text p, #offer .offer__rightCol .about__text p, #offer .offer__rightCol .offer_text p {
         color: #777;
         font-size: 15px;
         line-height: 20px; }
-      #about .about__rigthCol .about__text .line {
+      #about .about__rightCol .about__text .line, #about .about__rightCol .offer_text .line, #about .offer__rightCol .about__text .line, #about .offer__rightCol .offer_text .line, #offer .about__rightCol .about__text .line, #offer .about__rightCol .offer_text .line, #offer .offer__rightCol .about__text .line, #offer .offer__rightCol .offer_text .line {
         -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end; }
-      #about .about__rigthCol .about__text h2 {
+      #about .about__rightCol .about__text h2, #about .about__rightCol .offer_text h2, #about .offer__rightCol .about__text h2, #about .offer__rightCol .offer_text h2, #offer .about__rightCol .about__text h2, #offer .about__rightCol .offer_text h2, #offer .offer__rightCol .about__text h2, #offer .offer__rightCol .offer_text h2 {
         font-size: 28px;
         font-style: italic;
         margin: 50px 0 10px; }
-      #about .about__rigthCol .about__text h3 {
+      #about .about__rightCol .about__text h3, #about .about__rightCol .offer_text h3, #about .offer__rightCol .about__text h3, #about .offer__rightCol .offer_text h3, #offer .about__rightCol .about__text h3, #offer .about__rightCol .offer_text h3, #offer .offer__rightCol .about__text h3, #offer .offer__rightCol .offer_text h3 {
         font-size: 20px;
         font-style: italic;
         color: #797979; }
@@ -295,3 +296,5 @@ body {
       max-width: 350px; }
     #courses .course-row .courses__rightCol img {
       width: 100%; }
+
+/*** offer ***/

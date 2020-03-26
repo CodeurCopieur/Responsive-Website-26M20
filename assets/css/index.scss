@@ -168,25 +168,26 @@ body {
 }
 
 /* about */
-#about {
+#about, #offer {
   padding: 100px 0px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 
-  .about__leftCol {
+  .about__leftCol, .offer__leftCol {
      @include w50(50%);
      .image__leftCol {
        width: 100%;
      }
   }
 
-  .about__rigthCol {
+  .about__rightCol, .offer__rightCol {
     @include w50(50%);
     text-align: right;
-    .about__text {
+    .about__text, .offer_text {
       max-width: 500px;
-      margin-right: 0;
+      margin-right: 100px;
+      display: inline-block;
       h1 {
         @include h1;
         text-transform: capitalize;
@@ -294,5 +295,14 @@ body {
         width: 100%;
       }
     }
+  }
+}
+
+/*** offer ***/
+
+#offer {
+
+  .header__btn {
+    @extend %btnv1;
   }
 }
