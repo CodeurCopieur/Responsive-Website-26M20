@@ -16,9 +16,16 @@ html(lang="fr")
     link(rel="stylesheet", href="assets/css/index.css")
     title Responsive Website
   body
+    //header 
     header#header
       .container
-        img(src="assets/images/logo.png", alt="").logo
+        .hdr__nav
+          img(src="assets/images/logo.png", alt="").logo
+          .nav__burger
+            .line
+            .line
+            .line
+
         .header__text
           h1 The surpose is to <br> teach, bring learning to people
           span.square
@@ -27,5 +34,25 @@ html(lang="fr")
           a.header__btn(href="#") Lire plus
           .line
             each val, i in {1:'ion-logo-linkedin', 2:'ion-logo-codepen', 3:'ion-logo-instagram'}
-              span(class=".line-"+i) 
-                i.icon(class=val)
+              span(class="line-"+i) 
+                a(href="") 
+                  i.icon(class=val)
+    
+    //sideNav 
+    nav#sideNav
+      ul.nav__list
+        each val, i in ['home', 'about us','features', 'courses', 'offer', 'contact']
+            li.nav__item
+              a.nav__link=val
+
+    
+    //about 
+    section#about
+      .about__leftCol
+        img(src="assets/images/about.png", alt="")
+
+      .about__rigthCol
+    
+
+    script(src="assets/js/index.js")
+      
