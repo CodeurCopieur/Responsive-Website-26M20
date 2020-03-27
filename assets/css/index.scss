@@ -53,7 +53,7 @@ body {
       width: 100%;
 
       .logo {
-        margin-top: 30px;
+        //margin-top: 30px;
         width: 100px;
       }
 
@@ -491,20 +491,180 @@ body {
 
 @media (max-width: 1024px) and (min-width: 768px){
   #intro {
-    background-color: $rose;
+   //background-color: $rose;
+    //background-image: none;
+    .container {
+      margin: 0 70px;
 
+      .hdr__nav {
+        .nav__burger {
+          right: 70px;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 767px){
   #intro {
-    background-color: $violet;
+    background-image: none;
+    .container {
+      margin: 0 40px;
+
+      .hdr__nav {
+        .nav__burger {
+          right: 40px;
+        }
+      }
+
+      .header__text {
+        margin-top: 100px;
+        h1 {
+          font-size: 25px;
+        }
+
+        .header__btn {
+          padding: 10px 16px;
+        }
+        .line {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  #sideNav {
+    width: 170px;
+  }
+
+  #about {
+    .about__leftCol, .about__rightCol {
+      flex-basis: 100%;
+    }
+
+    .about__rightCol {
+
+      .about__text {
+        max-width: unset;
+        margin: 0 40px;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #features {
+    .feature__row {
+
+      .feature__Col {
+        @include width(100%);
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #courses {
+    .course-row {
+
+      .courses__leftCol, .courses__rightCol {
+        flex-basis: 100%;
+      }
+
+      .courses__leftCol {
+        .courses__txt {
+          max-width: unset;
+          margin: 0 40px;
+
+          .line {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      .courses__rightCol {
+        margin: 70px 40px 0px;
+      }
+    }
+  }
+
+  #offer {
+    .offer__leftCol {
+      flex-basis: 100%;
+    }
+
+    .offer__rightCol {
+      flex-basis: 100%;
+      .offer_text {
+        max-width: unset;
+        margin: 0 40px;
+      }
+    }
+  }
+
+  #contact {
+
+    .contact__row {
+      .contact__leftCol {
+        flex-basis: 100%;
+        margin: 0 40px;
+
+        h1 {
+          font-size: 25px;
+        }
+      }
+
+      .contact__rightCol {
+        flex-basis: 100%;
+        margin: 70px 40px 0px;
+      }
+    }
+  }
+
+  #footer {
+    .footer__row {
+      margin: 0 40px;
+      flex-direction: column;
+
+      .footer__leftCol, .footer__rightCol {
+        flex-basis: 100%;
+      }
+
+      .footer__leftCol {
+        .footer__links {
+
+          .link__title {
+            flex-basis: 50%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .footer__rightCol {
+
+      }
+    }
+  }
+
+  .social-icons {
+    width: 40px;
+    padding: 0px 5px;
+
+    .social__items {
+
+      a {
+        display: inline-block;
+        i {
+          font-size: 25px;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1024px){
   #intro {
-    background-color: $rose;
     .container {
       width: unset;
     }

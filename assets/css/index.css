@@ -109,7 +109,6 @@ body {
       align-items: center;
       width: 100%; }
       #intro .container .hdr__nav .logo {
-        margin-top: 30px;
         width: 100px; }
       #intro .container .hdr__nav .nav__burger {
         width: 2.25rem;
@@ -507,18 +506,93 @@ body {
       font-size: 30px; }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  #intro {
-    background-color: #D67086; } }
+  #intro .container {
+    margin: 0 70px; }
+    #intro .container .hdr__nav .nav__burger {
+      right: 70px; } }
 
 @media screen and (max-width: 767px) {
   #intro {
-    background-color: #353A85; } }
+    background-image: none; }
+    #intro .container {
+      margin: 0 40px; }
+      #intro .container .hdr__nav .nav__burger {
+        right: 40px; }
+      #intro .container .header__text {
+        margin-top: 100px; }
+        #intro .container .header__text h1 {
+          font-size: 25px; }
+        #intro .container .header__text .header__btn {
+          padding: 10px 16px; }
+        #intro .container .header__text .line {
+          margin-top: 50px; }
+  #sideNav {
+    width: 170px; }
+  #about .about__leftCol, #about .about__rightCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  #about .about__rightCol .about__text {
+    max-width: unset;
+    margin: 0 40px; }
+    #about .about__rightCol .about__text h2 {
+      font-size: 20px; }
+  #features .feature__row .feature__Col {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 20px; }
+  #courses .course-row .courses__leftCol, #courses .course-row .courses__rightCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  #courses .course-row .courses__leftCol .courses__txt {
+    max-width: unset;
+    margin: 0 40px; }
+    #courses .course-row .courses__leftCol .courses__txt .line {
+      margin-top: 50px; }
+  #courses .course-row .courses__rightCol {
+    margin: 70px 40px 0px; }
+  #offer .offer__leftCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  #offer .offer__rightCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    #offer .offer__rightCol .offer_text {
+      max-width: unset;
+      margin: 0 40px; }
+  #contact .contact__row .contact__leftCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 0 40px; }
+    #contact .contact__row .contact__leftCol h1 {
+      font-size: 25px; }
+  #contact .contact__row .contact__rightCol {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 70px 40px 0px; }
+  #footer .footer__row {
+    margin: 0 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #footer .footer__row .footer__leftCol, #footer .footer__row .footer__rightCol {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+    #footer .footer__row .footer__leftCol .footer__links .link__title {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-bottom: 20px; }
+  .social-icons {
+    width: 40px;
+    padding: 0px 5px; }
+    .social-icons .social__items a {
+      display: inline-block; }
+      .social-icons .social__items a i {
+        font-size: 25px; } }
 
 @media screen and (max-width: 1024px) {
-  #intro {
-    background-color: #D67086; }
-    #intro .container {
-      width: unset; }
+  #intro .container {
+    width: unset; }
   #courses .course-row {
     width: unset; }
   #contact .container {
