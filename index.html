@@ -16,7 +16,7 @@
   </head>
   <body>
     <!--header -->
-    <header id="header">
+    <section id="header">
       <div class="container">
         <div class="hdr__nav"><img class="logo" src="assets/images/logo.png" alt=""/>
           <div class="nav__burger">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <!--sideNav -->
     <nav id="sideNav">
       <ul class="nav__list">
@@ -84,7 +84,7 @@
       <div class="container course-row">
         <div class="courses__leftCol">
           <div class="courses__txt">
-            <h1>The surpose is to <br> teach, bring learning to people</h1><span class="square"></span>
+            <h1>Le but est <br> d'enseigner, de faire apprendre aux gens</h1><span class="square"></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.</p><a class="header__btn" href="#">Tout les cours</a>
             <div class="line"><span class="line-1"> <a href=""></a></span><span class="line-2"> <a href=""></a></span><span class="line-3"> <a href=""></a></span>
             </div>
@@ -98,13 +98,64 @@
       <div class="offer__leftCol"><img class="image__leftCol" src="assets/images/offer.png" alt=""/></div>
       <div class="offer__rightCol">
         <div class="offer_text">
-          <h1>Limitless learning, <br> limitless possibilities </h1><span class="square"></span>
+          <h1>Apprentissage illimité,<br>  possibilités illimitées</h1><span class="square"></span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam porro esse eius repellat consequatur cumque voluptatem. Exercitationem tempora, ad, commodi sed aut eligendi voluptatibus error reiciendis consectetur deleniti repellat odit, voluptas minima magni vel aliquam unde quidem eum vitae.</p><a class="header__btn" href="#">Essaie Gratuit</a>
           <div class="line"><span class="line-1"> <a href=""></a></span><span class="line-2"> <a href=""></a></span><span class="line-3"> <a href=""></a></span>
           </div>
         </div>
       </div>
     </section>
+    <!--contact-->
+    <section id="contact">
+      <div class="container contact__row">
+        <div class="contact__leftCol">
+          <h1>Inscrivez-vous pour rejoindre<br> notre communauté d'apprentissage</h1>
+          <form class="form" action="">
+            <div class="form__group">
+              <input class="input__field" id="name" type="text" name="name" placeholder="Entrez le nom"/>
+              <label for="name"> <i class="icon ion-md-person"></i></label>
+            </div>
+            <div class="form__group">
+              <input class="input__field" id="email" type="email" name="email" placeholder="Entrez l'email"/>
+              <label for="email"> <i class="icon ion-md-mail"></i></label>
+            </div>
+            <div class="form__group">
+              <input class="input__field" id="password" type="password" name="password" placeholder="Entrez le password"/>
+              <label for="password"> <i class="icon ion-md-lock"></i></label>
+            </div>
+            <div class="btn__box"> <a class="header__btn" href="#">Inscrivez-vous</a><a class="header__btn" href="#">Essaie Gratuit</a></div>
+            <div class="line"><span class="line-1"> <a href=""></a></span><span class="line-2"> <a href=""></a></span><span class="line-3"> <a href=""></a></span>
+            </div>
+          </form>
+        </div>
+        <div class="contact__rightCol"><img src="assets/images/contact.png" alt=""/></div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer id="footer">
+      <div class="container footer__row">
+        <hr/>
+        <div class="footer__leftCol">
+          <ul class="footer__links">
+            <li class="link__title">
+              <h4>Product</h4><small>Our Plan</small><small>Free Trial</small>
+            </li>
+            <li class="link__title">
+              <h4>About Us</h4><small>Request Demo</small><small>FAQs</small>
+            </li>
+            <li class="link__title">
+              <h4>Support</h4><small>Features</small><small>Contact</small>
+            </li>
+            <li class="link__title">
+              <h4>Explore</h4><small>Find a non profit</small><small>Corporate Solution</small>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__rightCol">
+          <p>right column</p>
+        </div>
+      </div>
+    </footer>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@ html(lang="fr")
     title Responsive Website
   body
     //header 
-    header#header
+    section#header
       .container
         .hdr__nav
           img(src="assets/images/logo.png", alt="").logo
@@ -37,7 +37,6 @@ html(lang="fr")
               span(class="line-"+val) 
                 a(href="") 
                   
-    
     //sideNav 
     nav#sideNav
       ul.nav__list
@@ -45,7 +44,6 @@ html(lang="fr")
             li.nav__item
               a.nav__link=val
 
-    
     //about 
     section#about
       .about__leftCol
@@ -85,7 +83,7 @@ html(lang="fr")
       .container.course-row
         .courses__leftCol
           .courses__txt
-            h1 The surpose is to <br> teach, bring learning to people
+            h1 Le but est <br> d'enseigner, de faire apprendre aux gens
             span.square
             p
               | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
@@ -107,7 +105,7 @@ html(lang="fr")
 
       .offer__rightCol
         .offer_text
-          h1 Limitless learning, <br> limitless possibilities 
+          h1 Apprentissage illimité,<br>  possibilités illimitées
           span.square
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam porro esse eius repellat consequatur cumque voluptatem. Exercitationem tempora, ad, commodi sed aut eligendi voluptatibus error reiciendis consectetur deleniti repellat odit, voluptas minima magni vel aliquam unde quidem eum vitae.
 
@@ -117,6 +115,66 @@ html(lang="fr")
             each val, i in [1 , 2, 3]
               span(class="line-"+val) 
                 a(href="")
+
+    //contact
+    section#contact
+      .container.contact__row
+        .contact__leftCol
+          h1 Inscrivez-vous pour rejoindre<br> notre communauté d'apprentissage
+
+          form(action="").form
+            .form__group
+              input#name(type="text", name="name", placeholder="Entrez le nom").input__field
+              label(for="name") 
+                i.icon.ion-md-person
+
+            .form__group
+              input#email(type="email", name="email", placeholder="Entrez l'email").input__field
+              label(for="email") 
+                i.icon.ion-md-mail
+            
+            .form__group
+              input#password(type="password", name="password", placeholder="Entrez le password").input__field
+              label(for="password") 
+                i.icon.ion-md-lock
+            
+            .btn__box 
+              a.header__btn(href="#") Inscrivez-vous
+              a.header__btn(href="#") Essaie Gratuit
+
+            .line
+              each val, i in [1 , 2, 3]
+                span(class="line-"+val) 
+                  a(href="")
+
+        .contact__rightCol
+          img(src="assets/images/contact.png", alt="")
+
+    //footer
+    footer#footer
+      .container.footer__row
+        hr
+        .footer__leftCol
+          ul.footer__links
+            li.link__title
+              h4 Product
+              small Our Plan
+              small Free Trial
+            li.link__title
+              h4 About Us
+              small Request Demo
+              small FAQs
+            li.link__title
+              h4 Support
+              small Features
+              small Contact
+            li.link__title
+              h4 Explore
+              small Find a non profit
+              small Corporate Solution
+
+        .footer__rightCol
+          p right column
 
     script(src="assets/js/index.js")
       
