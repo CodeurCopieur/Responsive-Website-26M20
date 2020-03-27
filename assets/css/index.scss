@@ -432,7 +432,7 @@ body {
           }
 
           small {
-            font-size: 13x;
+            font-size: 13px;
             margin-bottom: 5px;
             color: $grey;
             cursor: pointer;
@@ -443,6 +443,31 @@ body {
 
     .footer__rightCol {
       flex-basis: 35%;
+
+      .footer__info {
+        @include row(null, null, flex, flex-end,null, space-between, wrap);
+        .copyright-text {
+         @include width(40%);
+         @include row(null, null, flex, null ,null, space-between, wrap)
+         
+         small {
+          font-size: 13px;
+          margin-bottom: 5px;
+          color: $grey;
+          cursor: pointer;
+         }
+        }
+
+        .footer__logo {
+          @include width(40%);
+          img {
+            width: 100px;
+          }
+          .header__btn {
+            @extend %btnv1;
+          }
+        }
+      }
     }
   }
 }
