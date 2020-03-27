@@ -63,7 +63,7 @@ body {
         width: 2.25rem;
         height: 1.2rem;
         position: fixed;
-        right: 155px;
+        right: 160px;
         cursor: pointer;
         z-index: 3;
         transition: all 480ms;
@@ -299,10 +299,150 @@ body {
 }
 
 /*** offer ***/
-
 #offer {
-
   .header__btn {
     @extend %btnv1;
+  }
+}
+
+/*** contact ***/
+#contact {
+  .container {
+    @include centrer(1200px, 0 auto);
+  }
+  .contact__row {
+
+    @include row(null, null, flex, center, null, null, wrap);
+
+    .contact__leftCol, .contact__rightCol {
+      @include w50(50%);
+    }
+
+    .contact__leftCol {
+      h1 {
+        @include h1;
+      }
+
+      .form {
+        max-width: 400px;
+        margin: 30px 0;
+
+        .form__group {
+          z-index: 2;
+          position: relative;
+          margin-bottom: 10px;
+
+          .input__field {
+            width: 100%;
+            padding: 15px;
+            padding-left: 50px;
+            color: $rose;
+            border: 2px solid $violet;
+            outline: none;
+            font-size: 16px;
+            transition: all 480ms;
+
+            &::placeholder {
+              color: $black;
+              margin-left: 10px;
+              font-weight: 600;
+              letter-spacing: 2px;
+              opacity: .5;
+            }
+          }
+          label {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+
+            i {
+              position: absolute;
+              color: $rose;
+              top: 50%;
+              left: 25px;
+              transform: translateY(-50%);
+            }
+          }
+        }
+
+        .btn__box  {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .header__btn {
+            @extend %btnv1;
+            padding: 18px 0;
+            width: 48%;
+            text-align: center;
+
+          }
+        }
+
+        .line {
+          @extend %lineDetails;
+        }
+      }
+    }
+
+    .contact__rightCol {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*** footer ***/
+#footer {
+  padding: 50px 0 30px;
+
+  .container {
+    @include centrer(1200px, 0 auto);
+  }
+
+  .footer__row {
+    hr {
+      width: 100%;
+      border:0;
+      border-top: 1px solid $violet;
+    }
+
+    @include row(null, null, flex, center, null, space-between, wrap);
+
+    .footer__leftCol {
+
+      flex-basis: 50%;
+      margin-top: 60px;
+
+      .footer__links {
+
+        @include row(null, null, flex, null, null, space-between, wrap);
+
+        .link__title {
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            @include titre(18px, null, null, $violet);
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+
+          small {
+            font-size: 13x;
+            margin-bottom: 5px;
+            color: $grey;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .footer__rightCol {
+      flex-basis: 35%;
+    }
   }
 }

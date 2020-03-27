@@ -12,7 +12,7 @@
   -o-transition: all 480ms;
   transition: all 480ms; }
 
-#header .container .header__text .header__btn, #features .features__btn .header__btn, #courses .course-row .courses__leftCol .courses__txt .header__btn, #offer .header__btn {
+#header .container .header__text .header__btn, #features .features__btn .header__btn, #courses .course-row .courses__leftCol .courses__txt .header__btn, #offer .header__btn, #contact .contact__row .contact__leftCol .form .btn__box .header__btn {
   display: inline-block;
   padding: 18px 40px;
   background: transparent;
@@ -23,11 +23,11 @@
   -o-transition: all 480ms;
   transition: all 480ms;
   color: #353A85; }
-  #header .container .header__text .header__btn:hover, #features .features__btn .header__btn:hover, #courses .course-row .courses__leftCol .courses__txt .header__btn:hover, #offer .header__btn:hover {
+  #header .container .header__text .header__btn:hover, #features .features__btn .header__btn:hover, #courses .course-row .courses__leftCol .courses__txt .header__btn:hover, #offer .header__btn:hover, #contact .contact__row .contact__leftCol .form .btn__box .header__btn:hover {
     background-color: #353A85;
     color: #fff; }
 
-#header .container .header__text .line, #about .about__rightCol .about__text .line, #about .about__rightCol .offer_text .line, #about .offer__rightCol .about__text .line, #about .offer__rightCol .offer_text .line, #offer .about__rightCol .about__text .line, #offer .about__rightCol .offer_text .line, #offer .offer__rightCol .about__text .line, #offer .offer__rightCol .offer_text .line, #features .features__btn .line, #courses .course-row .courses__leftCol .courses__txt .line {
+#header .container .header__text .line, #about .about__rightCol .about__text .line, #about .about__rightCol .offer_text .line, #about .offer__rightCol .about__text .line, #about .offer__rightCol .offer_text .line, #offer .about__rightCol .about__text .line, #offer .about__rightCol .offer_text .line, #offer .offer__rightCol .about__text .line, #offer .offer__rightCol .offer_text .line, #features .features__btn .line, #courses .course-row .courses__leftCol .courses__txt .line, #contact .contact__row .contact__leftCol .form .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,16 +36,16 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 20px; }
-  #header .container .header__text .line .line-1, #about .about__rightCol .about__text .line .line-1, #about .about__rightCol .offer_text .line .line-1, #about .offer__rightCol .about__text .line .line-1, #about .offer__rightCol .offer_text .line .line-1, #offer .about__rightCol .about__text .line .line-1, #offer .about__rightCol .offer_text .line .line-1, #offer .offer__rightCol .about__text .line .line-1, #offer .offer__rightCol .offer_text .line .line-1, #features .features__btn .line .line-1, #courses .course-row .courses__leftCol .courses__txt .line .line-1 {
+  #header .container .header__text .line .line-1, #about .about__rightCol .about__text .line .line-1, #about .about__rightCol .offer_text .line .line-1, #about .offer__rightCol .about__text .line .line-1, #about .offer__rightCol .offer_text .line .line-1, #offer .about__rightCol .about__text .line .line-1, #offer .about__rightCol .offer_text .line .line-1, #offer .offer__rightCol .about__text .line .line-1, #offer .offer__rightCol .offer_text .line .line-1, #features .features__btn .line .line-1, #courses .course-row .courses__leftCol .courses__txt .line .line-1, #contact .contact__row .contact__leftCol .form .line .line-1 {
     width: 15px;
     height: 15px;
     background-color: #353A85; }
-  #header .container .header__text .line .line-2, #about .about__rightCol .about__text .line .line-2, #about .about__rightCol .offer_text .line .line-2, #about .offer__rightCol .about__text .line .line-2, #about .offer__rightCol .offer_text .line .line-2, #offer .about__rightCol .about__text .line .line-2, #offer .about__rightCol .offer_text .line .line-2, #offer .offer__rightCol .about__text .line .line-2, #offer .offer__rightCol .offer_text .line .line-2, #features .features__btn .line .line-2, #courses .course-row .courses__leftCol .courses__txt .line .line-2 {
+  #header .container .header__text .line .line-2, #about .about__rightCol .about__text .line .line-2, #about .about__rightCol .offer_text .line .line-2, #about .offer__rightCol .about__text .line .line-2, #about .offer__rightCol .offer_text .line .line-2, #offer .about__rightCol .about__text .line .line-2, #offer .about__rightCol .offer_text .line .line-2, #offer .offer__rightCol .about__text .line .line-2, #offer .offer__rightCol .offer_text .line .line-2, #features .features__btn .line .line-2, #courses .course-row .courses__leftCol .courses__txt .line .line-2, #contact .contact__row .contact__leftCol .form .line .line-2 {
     width: 80px;
     height: 1px;
     margin-top: 10px;
     background-color: #353A85; }
-  #header .container .header__text .line .line-3, #about .about__rightCol .about__text .line .line-3, #about .about__rightCol .offer_text .line .line-3, #about .offer__rightCol .about__text .line .line-3, #about .offer__rightCol .offer_text .line .line-3, #offer .about__rightCol .about__text .line .line-3, #offer .about__rightCol .offer_text .line .line-3, #offer .offer__rightCol .about__text .line .line-3, #offer .offer__rightCol .offer_text .line .line-3, #features .features__btn .line .line-3, #courses .course-row .courses__leftCol .courses__txt .line .line-3 {
+  #header .container .header__text .line .line-3, #about .about__rightCol .about__text .line .line-3, #about .about__rightCol .offer_text .line .line-3, #about .offer__rightCol .about__text .line .line-3, #about .offer__rightCol .offer_text .line .line-3, #offer .about__rightCol .about__text .line .line-3, #offer .about__rightCol .offer_text .line .line-3, #offer .offer__rightCol .about__text .line .line-3, #offer .offer__rightCol .offer_text .line .line-3, #features .features__btn .line .line-3, #courses .course-row .courses__leftCol .courses__txt .line .line-3, #contact .contact__row .contact__leftCol .form .line .line-3 {
     width: 60px;
     height: 1px;
     margin-top: 10px;
@@ -115,7 +115,7 @@ body {
         width: 2.25rem;
         height: 1.2rem;
         position: fixed;
-        right: 155px;
+        right: 160px;
         cursor: pointer;
         z-index: 3;
         -webkit-transition: all 480ms;
@@ -298,3 +298,151 @@ body {
       width: 100%; }
 
 /*** offer ***/
+/*** contact ***/
+#contact .container {
+  width: 1200px;
+  margin: 0 auto; }
+
+#contact .contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #contact .contact__row .contact__leftCol, #contact .contact__row .contact__rightCol {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  #contact .contact__row .contact__leftCol h1 {
+    font-size: 34px;
+    font-weight: 600; }
+  #contact .contact__row .contact__leftCol .form {
+    max-width: 400px;
+    margin: 30px 0; }
+    #contact .contact__row .contact__leftCol .form .form__group {
+      z-index: 2;
+      position: relative;
+      margin-bottom: 10px; }
+      #contact .contact__row .contact__leftCol .form .form__group .input__field {
+        width: 100%;
+        padding: 15px;
+        padding-left: 50px;
+        color: #D67086;
+        border: 2px solid #353A85;
+        outline: none;
+        font-size: 16px;
+        -webkit-transition: all 480ms;
+        -o-transition: all 480ms;
+        transition: all 480ms; }
+        #contact .contact__row .contact__leftCol .form .form__group .input__field::-webkit-input-placeholder {
+          color: #292949;
+          margin-left: 10px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          opacity: .5; }
+        #contact .contact__row .contact__leftCol .form .form__group .input__field:-ms-input-placeholder {
+          color: #292949;
+          margin-left: 10px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          opacity: .5; }
+        #contact .contact__row .contact__leftCol .form .form__group .input__field::-ms-input-placeholder {
+          color: #292949;
+          margin-left: 10px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          opacity: .5; }
+        #contact .contact__row .contact__leftCol .form .form__group .input__field::placeholder {
+          color: #292949;
+          margin-left: 10px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          opacity: .5; }
+      #contact .contact__row .contact__leftCol .form .form__group label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; }
+        #contact .contact__row .contact__leftCol .form .form__group label i {
+          position: absolute;
+          color: #D67086;
+          top: 50%;
+          left: 25px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+    #contact .contact__row .contact__leftCol .form .btn__box {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #contact .contact__row .contact__leftCol .form .btn__box .header__btn {
+        padding: 18px 0;
+        width: 48%;
+        text-align: center; }
+  #contact .contact__row .contact__rightCol img {
+    width: 100%; }
+
+/*** footer ***/
+#footer {
+  padding: 50px 0 30px; }
+  #footer .container {
+    width: 1200px;
+    margin: 0 auto; }
+  #footer .footer__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #footer .footer__row hr {
+      width: 100%;
+      border: 0;
+      border-top: 1px solid #353A85; }
+    #footer .footer__row .footer__leftCol {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      margin-top: 60px; }
+      #footer .footer__row .footer__leftCol .footer__links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        #footer .footer__row .footer__leftCol .footer__links .link__title {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          #footer .footer__row .footer__leftCol .footer__links .link__title h4 {
+            font-size: 18px;
+            color: #353A85;
+            margin-bottom: 20px;
+            font-weight: 600; }
+          #footer .footer__row .footer__leftCol .footer__links .link__title small {
+            font-size: 13x;
+            margin-bottom: 5px;
+            color: #777;
+            cursor: pointer; }
+    #footer .footer__row .footer__rightCol {
+      -ms-flex-preferred-size: 35%;
+      flex-basis: 35%; }
