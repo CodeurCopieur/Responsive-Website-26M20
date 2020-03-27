@@ -31,7 +31,7 @@ html(lang="fr")
           span.square
           p
             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae, officiis similique at consequuntur rerum aliquam ratione, sed harum placeat enim est omnis ex voluptatem illum quam, provident earum natus.
-          a.header__btn(href="#") Lire plus
+          a.header__btn(href="#") Lire Plus
           .line
             each val, i in [1 , 2, 3]
               span(class="line-"+val) 
@@ -65,7 +65,7 @@ html(lang="fr")
     //features
     section#features
       .feature__row
-        each val, index in [{image: 'assets/images/pic-1.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-2.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-3.png', titre: 'Lorem ipsum', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}]
+        each val, index in [{image: 'assets/images/pic-1.png', titre: 'Learn Anywhere', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-2.png', titre: 'Expert Teachers', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}, {image: 'assets/images/pic-3.png', titre: 'Unlimted Access', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}]
           .feature__Col
             img(src= val.image, alt= val.titre)
             h4= val.titre
@@ -186,7 +186,7 @@ html(lang="fr")
     ul.social-icons
       each val, i in [{class:'ion-logo-github', link: 'https://codwerk.github.io/'} , {class:'ion-logo-linkedin', link: 'https://codwerk.github.io/'}, {class:'ion-logo-instagram', link: 'https://codwerk.github.io/'}]
         li.social__items
-          a(href=val.link)
+          a(href=val.link, target='_blank')
             i.icon(class=val.class) 
 
     script(src="assets/js/index.js")
