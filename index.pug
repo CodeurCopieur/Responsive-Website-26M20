@@ -17,7 +17,7 @@ html(lang="fr")
     title Responsive Website
   body
     //header 
-    section#header
+    section#intro
       .container
         .hdr__nav
           img(src="assets/images/logo.png", alt="").logo
@@ -181,6 +181,13 @@ html(lang="fr")
             .footer__logo
               img(src="assets/images/logo.png", alt="")
               a.header__btn(href="#") English
+
+    //social-icons
+    ul.social-icons
+      each val, i in [{class:'ion-logo-github', link: 'https://codwerk.github.io/'} , {class:'ion-logo-linkedin', link: 'https://codwerk.github.io/'}, {class:'ion-logo-instagram', link: 'https://codwerk.github.io/'}]
+        li.social__items
+          a(href=val.link)
+            i.icon(class=val.class) 
 
     script(src="assets/js/index.js")
       
