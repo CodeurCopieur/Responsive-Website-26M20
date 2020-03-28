@@ -62,6 +62,6 @@
 }
 
 @mixin centrer($width, $margin) {
-  width: $width;
+  max-width: $width;
   margin: $margin;
 }
