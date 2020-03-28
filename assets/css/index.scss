@@ -61,7 +61,7 @@ body {
         width: 2.25rem;
         height: 1.2rem;
         position: fixed;
-        right: 160px;
+        right: 100px;
         cursor: pointer;
         z-index: 3;
         transition: all 480ms;
@@ -445,12 +445,12 @@ body {
          @include width(40%);
          @include row(null, null, flex, null ,null, space-between, wrap)
          
-         small {
-          font-size: 13px;
-          margin-bottom: 5px;
-          color: $grey;
-          cursor: pointer;
-         }
+          small {
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: $grey;
+            cursor: pointer;
+          }
         }
 
         .footer__logo {
@@ -489,10 +489,15 @@ body {
   }
 }
 
+@media (max-width: 1200px) and (min-width: 1025px){
+
+}
+
 @media (max-width: 1024px) and (min-width: 768px){
   #intro {
+    height: 70vh;
    //background-color: $rose;
-    //background-image: none;
+    background-image: none;
     .container {
       margin: 0 70px;
 
@@ -503,11 +508,91 @@ body {
       }
     }
   }
+
+  #about {
+    padding: 0px;
+
+    .about__rightCol {
+      .about__text {
+        margin-right: 70px;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #features {
+    .feature__row {
+      width: 82%;
+
+      .feature__Col {
+        h4 {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  #courses {
+    .course-row {
+      .courses__leftCol {
+        .courses__txt {
+          margin-left: 70px;
+        }
+      }
+    }
+  }
+
+  #offer {
+    .offer__rightCol {
+
+      .offer_text {
+        margin-right: 70px;
+      }
+    }
+  }
+
+  #contact {
+    .contact__row {
+      flex-wrap: unset;
+      .contact__leftCol {
+            margin-left: 70px;
+      }
+    }
+  }
+
+  #footer {
+    .footer__row {
+      margin: 0px 70px;
+
+      .footer__leftCol {
+        .footer__links {
+          .link__title {
+            flex-basis: 25%;
+          }
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    .social__items {
+      a {
+        display: inline-block;
+        i {
+          font-size: 34px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px){
   #intro {
     background-image: none;
+    height: 80vh;
     .container {
       margin: 0 40px;
 
@@ -666,7 +751,7 @@ body {
 @media screen and (max-width: 1024px){
   #intro {
     .container {
-      width: unset;
+      max-width: unset;
     }
   }
 

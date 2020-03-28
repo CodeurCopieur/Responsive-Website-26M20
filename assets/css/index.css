@@ -89,7 +89,7 @@ body {
   background-position: center;
   background-size: cover; }
   #intro .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
     position: relative; }
@@ -114,7 +114,7 @@ body {
         width: 2.25rem;
         height: 1.2rem;
         position: fixed;
-        right: 160px;
+        right: 100px;
         cursor: pointer;
         z-index: 3;
         -webkit-transition: all 480ms;
@@ -277,7 +277,7 @@ body {
 #courses {
   padding: 100px 0; }
   #courses .course-row {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,7 +298,7 @@ body {
 /*** offer ***/
 /*** contact ***/
 #contact .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 #contact .contact__row {
@@ -392,7 +392,7 @@ body {
 #footer {
   padding: 50px 0 30px; }
   #footer .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto; }
   #footer .footer__row {
     display: -webkit-box;
@@ -506,14 +506,46 @@ body {
       font-size: 30px; }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  #intro .container {
-    margin: 0 70px; }
-    #intro .container .hdr__nav .nav__burger {
-      right: 70px; } }
+  #intro {
+    height: 70vh;
+    background-image: none; }
+    #intro .container {
+      margin: 0 70px; }
+      #intro .container .hdr__nav .nav__burger {
+        right: 70px; }
+  #about {
+    padding: 0px; }
+    #about .about__rightCol .about__text {
+      margin-right: 70px; }
+      #about .about__rightCol .about__text h2 {
+        font-size: 20px; }
+  #features .feature__row {
+    width: 82%; }
+    #features .feature__row .feature__Col h4 {
+      font-size: 19px; }
+  #courses .course-row .courses__leftCol .courses__txt {
+    margin-left: 70px; }
+  #offer .offer__rightCol .offer_text {
+    margin-right: 70px; }
+  #contact .contact__row {
+    -ms-flex-wrap: unset;
+    flex-wrap: unset; }
+    #contact .contact__row .contact__leftCol {
+      margin-left: 70px; }
+  #footer .footer__row {
+    margin: 0px 70px; }
+    #footer .footer__row .footer__leftCol .footer__links .link__title {
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+  .social-icons .social__items a {
+    display: inline-block; }
+    .social-icons .social__items a i {
+      font-size: 34px; } }
 
 @media screen and (max-width: 767px) {
   #intro {
-    background-image: none; }
+    background-image: none;
+    height: 80vh; }
     #intro .container {
       margin: 0 40px; }
       #intro .container .hdr__nav .nav__burger {
@@ -592,7 +624,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   #intro .container {
-    width: unset; }
+    max-width: unset; }
   #courses .course-row {
     width: unset; }
   #contact .container {
