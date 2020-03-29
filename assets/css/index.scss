@@ -481,9 +481,12 @@ body {
   .social__items {
     margin: 10px 0;
     cursor: pointer;
-    i {
-      color: $violet;
-      font-size: 30px;
+    a {
+      outline: none;
+      i {
+        color: $violet;
+        font-size: 30px;
+      }
     }
   }
 }

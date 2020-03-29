@@ -507,9 +507,11 @@ body {
   .social-icons .social__items {
     margin: 10px 0;
     cursor: pointer; }
-    .social-icons .social__items i {
-      color: #353A85;
-      font-size: 30px; }
+    .social-icons .social__items a {
+      outline: none; }
+      .social-icons .social__items a i {
+        color: #353A85;
+        font-size: 30px; }
 
 /* LAPTOP */
 @media (max-width: 1280px) and (min-width: 1025px) {
