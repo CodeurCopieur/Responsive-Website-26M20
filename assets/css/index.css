@@ -119,7 +119,7 @@ body {
         position: fixed;
         right: 100px;
         cursor: pointer;
-        z-index: 3;
+        z-index: 10;
         -webkit-transition: all 480ms;
         -o-transition: all 480ms;
         transition: all 480ms; }
@@ -174,7 +174,7 @@ body {
       cursor: pointer; }
   #sideNav.is-active {
     right: 0;
-    z-index: 1; }
+    z-index: 5; }
 
 /* about */
 #about, #offer {
@@ -536,15 +536,13 @@ body {
     width: 82%; }
     #features .feature__row .feature__Col h4 {
       font-size: 19px; }
-  #courses .course-row .courses__leftCol .courses__txt {
-    margin-left: 70px; }
   #offer .offer__rightCol .offer_text {
     margin-right: 70px; }
   #contact .contact__row {
     -ms-flex-wrap: unset;
     flex-wrap: unset; }
-    #contact .contact__row .contact__leftCol {
-      margin-left: 70px; }
+    #contact .contact__row .contact__leftCol form {
+      max-width: 280px; }
   #footer .footer__row {
     margin: 0px 70px; }
     #footer .footer__row .footer__leftCol .footer__links .link__title {
@@ -568,8 +566,6 @@ body {
         margin-top: 100px; }
         #intro .container .header__text h1 {
           font-size: 25px; }
-        #intro .container .header__text .header__btn {
-          padding: 10px 16px; }
         #intro .container .header__text .line {
           margin-top: 50px; }
   #sideNav {
@@ -586,16 +582,17 @@ body {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-bottom: 20px; }
+  #features .features__btn .header__btn {
+    padding: 18px 30px; }
   #courses .course-row .courses__leftCol, #courses .course-row .courses__rightCol {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
   #courses .course-row .courses__leftCol .courses__txt {
-    max-width: unset;
-    margin: 0 40px; }
+    max-width: unset; }
     #courses .course-row .courses__leftCol .courses__txt .line {
       margin-top: 50px; }
   #courses .course-row .courses__rightCol {
-    margin: 70px 40px 0px; }
+    margin: 70px 0px; }
   #offer .offer__leftCol {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
@@ -607,14 +604,13 @@ body {
       margin: 0 40px; }
   #contact .contact__row .contact__leftCol {
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    margin: 0 40px; }
+    flex-basis: 100%; }
     #contact .contact__row .contact__leftCol h1 {
       font-size: 25px; }
   #contact .contact__row .contact__rightCol {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    margin: 70px 40px 0px; }
+    margin: 70px 0px; }
   #footer .footer__row {
     margin: 0 40px;
     -webkit-box-orient: vertical;
