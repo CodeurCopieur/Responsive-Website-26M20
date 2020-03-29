@@ -117,7 +117,7 @@ body {
         width: 2.25rem;
         height: 1.2rem;
         position: fixed;
-        right: 100px;
+        right: 150px;
         cursor: pointer;
         z-index: 10;
         -webkit-transition: all 480ms;
@@ -201,7 +201,7 @@ body {
     text-align: right; }
     #about .about__rightCol .about__text, #about .about__rightCol .offer_text, #about .offer__rightCol .about__text, #about .offer__rightCol .offer_text, #offer .about__rightCol .about__text, #offer .about__rightCol .offer_text, #offer .offer__rightCol .about__text, #offer .offer__rightCol .offer_text {
       max-width: 500px;
-      margin-right: 100px;
+      margin-right: 150px;
       display: inline-block; }
       #about .about__rightCol .about__text h1, #about .about__rightCol .offer_text h1, #about .offer__rightCol .about__text h1, #about .offer__rightCol .offer_text h1, #offer .about__rightCol .about__text h1, #offer .about__rightCol .offer_text h1, #offer .offer__rightCol .about__text h1, #offer .offer__rightCol .offer_text h1 {
         font-size: 34px;
