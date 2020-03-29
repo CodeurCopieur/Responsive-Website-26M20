@@ -89,10 +89,13 @@ body {
   background-position: center;
   background-size: cover; }
   #intro .container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     height: 100%;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 480ms;
+    -o-transition: all 480ms;
+    transition: all 480ms; }
     #intro .container .hdr__nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -183,7 +186,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-transition: all 480ms;
+  -o-transition: all 480ms;
+  transition: all 480ms; }
   #about .about__leftCol, #about .offer__leftCol, #offer .about__leftCol, #offer .offer__leftCol {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
@@ -277,7 +283,7 @@ body {
 #courses {
   padding: 100px 0; }
   #courses .course-row {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,7 +304,7 @@ body {
 /*** offer ***/
 /*** contact ***/
 #contact .container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto; }
 
 #contact .contact__row {
@@ -392,7 +398,7 @@ body {
 #footer {
   padding: 50px 0 30px; }
   #footer .container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto; }
   #footer .footer__row {
     display: -webkit-box;
@@ -505,6 +511,13 @@ body {
       color: #353A85;
       font-size: 30px; }
 
+/* LAPTOP */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  section#intro .container {
+    max-width: 80%;
+    margin: 0 auto; } }
+
+/* tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
   #intro {
     height: 70vh;
@@ -542,6 +555,7 @@ body {
     .social-icons .social__items a i {
       font-size: 34px; } }
 
+/* MOBILE */
 @media screen and (max-width: 767px) {
   #intro {
     background-image: none;

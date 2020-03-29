@@ -40,9 +40,10 @@ body {
   background-size: cover;
 
   .container {
-    @include centrer(1200px, 0 auto);
+    @include centrer(80%, 0 auto);
     height: 100%;
     position: relative;
+    transition: all 480ms;
 
     .hdr__nav {
 
@@ -168,6 +169,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 480ms;
 
   .about__leftCol, .offer__leftCol {
      @include w50(50%);
@@ -263,7 +265,7 @@ body {
   padding: 100px 0;
 
   .course-row {
-    @include centrer(1200px, 0 auto);
+    @include centrer(80%, 0 auto);
     @include row(null, null, flex, center, null, null, wrap);
 
     .courses__leftCol, .courses__rightCol {
@@ -303,7 +305,7 @@ body {
 /*** contact ***/
 #contact {
   .container {
-    @include centrer(1200px, 0 auto);
+    @include centrer(80%, 0 auto);
   }
   .contact__row {
 
@@ -395,7 +397,7 @@ body {
   padding: 50px 0 30px;
 
   .container {
-    @include centrer(1200px, 0 auto);
+    @include centrer(80%, 0 auto);
   }
 
   .footer__row {
@@ -488,11 +490,17 @@ body {
     }
   }
 }
-
-@media (max-width: 1200px) and (min-width: 1025px){
-
+/* LAPTOP */
+@media (max-width: 1280px) and (min-width: 1025px){
+  section#intro{
+    .container {
+      @include centrer(80%, 0 auto);
+    }
+  }
+      
 }
 
+/* tablet */
 @media (max-width: 1024px) and (min-width: 768px){
   #intro {
     height: 70vh;
@@ -589,6 +597,7 @@ body {
   }
 }
 
+/* MOBILE */
 @media screen and (max-width: 767px){
   #intro {
     background-image: none;
